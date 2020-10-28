@@ -11,7 +11,21 @@
 <body>
 
     <header>
-
+        <div class="auth">
+            <div class="auth__without hidden">
+              <a href="/inicioSesion.html">Iniciar sesión</a>
+              <a href="registro.html">Registrarse</a>
+            </div>
+            <div class="auth__with hidden">
+              <a href="/perfil.html" class="auth__profile">
+                <img src="" alt="">
+                <span></span>
+              </a>
+              <a href="#" class="auth__signout">
+                Cerrar sesión
+              </a>
+            </div>
+          </div>
     </header>
 
     <main>
@@ -23,6 +37,7 @@
             <div>
                 <button class="chat__sendBtn" type="submit">enviar</button>
             </div>
+            
         </form>
 
     </main>
@@ -30,7 +45,9 @@
     <footer></footer>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="./script/firebase.js"></script>
     <script src="./script/main.js"></script>
+    <script src="./script/auth.js"></script>
 </body>
 
 </html>
